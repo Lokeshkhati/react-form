@@ -1,4 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* --primary-color: rgb(151, 81, 216); */
+  --primary-color: rgb(90, 202, 55);
+}
+body {
+  font-family: "Inter", sans-serif;
+}
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+form {
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+}
+.form-input {
+  display: block;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 15px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 13px;
+  margin-left: 23px;
+  /* padding: 10px; */
+}
+.checkbox input {
+  margin-right: 10px;
+}
+
+.signUp-btn {
+  width: 50%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
